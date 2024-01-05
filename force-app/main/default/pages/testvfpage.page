@@ -1,0 +1,39 @@
+<apex:page id="MyFirstPDF" standardController="Account" renderAs="pdf" applyHtmlTag="false" showHeader="false" applyBodyTag="false">
+    <head>
+        <style>
+            @page { margin: 0px; padding: 0px; size: 1280px 720px; }
+            body {
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        height: 100%;
+    }
+    .page-container {
+        display: flex;
+        flex-direction: column;
+    }
+    .heading {
+        height: 20%;
+        background-color: purple;
+        color: white;
+       
+    }
+
+    .content {
+        width: 100%;
+        
+        color: black;
+    }
+        </style>
+    </head>
+    <body>
+        <div class="page-container">
+            <div class="heading">
+                <h2 class="heading-text">Learning C#</h2>
+            </div>
+            <div class="content">
+
+            </div>
+        </div>
+    </body>
+</apex:page>
